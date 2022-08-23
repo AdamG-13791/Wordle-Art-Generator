@@ -7,17 +7,17 @@ Compile with cargo build --release
 # Arguments
 Required fields:
 
--a, --answer ANS    The solution to today's Wordle  
--i, --img IMG       The input image to convert  
--o, --out OUT       Output file
+-a, --answer (ANS): The solution to today's Wordle  
+-i, --img (IMG): The input image to convert  
+-o, --out (OUT): Output file
 
 Optional fields:
 
--d, --dict DICT     Dictionary of allowed words, default is the dict.txt provided  
--t, --trans TRANS   Transform steps, see below, default is no transformation  
--u, --hint-out TYPE Hint output type, a=all hints, f=first hint, r=random hint, default is first  
--n, --nope          Flag - When included then no output will be writen if any rows fail to find a hint  
--h, --help          Print this help message, only works if first argument
+-d, --dict (DICT): Dictionary of allowed words, default is the dict.txt provided  
+-t, --trans (TRANS): Transform steps, see below, default is no transformation  
+-u, --hint-out (TYPE): Hint output type, a=all hints, f=first hint, r=random hint, default is first  
+-n, --nope: Flag - When included then no output will be writen if any rows fail to find a hint  
+-h, --help: Print the help message, only works if first argument
 
 # Usage
 Supply this program with this day's wordle answer, an image file of the art you want produced, and the output file and it will tell you the guesses you need to input to produce that image.

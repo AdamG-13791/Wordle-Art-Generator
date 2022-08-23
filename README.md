@@ -2,7 +2,8 @@
 Command-line program for converting an artwork to a series of wordle guesses
 
 # Compiling
-Compile with cargo build --release
+Compile with "cargo build --release"
+The program is called "wordle-art" and will be located in target/release
 
 # Arguments
 Required fields:

@@ -6,9 +6,13 @@ Compile with cargo build --release
 
 # Arguments
 Required fields:
+
 -a, --answer ANS    The solution to today's Wordle
+
 -i, --img IMG       The input image to convert
+
 -o, --out OUT       Output file
+
 Optional fields:
 -d, --dict DICT     Dictionary of allowed words, default is the dict.txt provided
 -t, --trans TRANS   Transform steps, see below, default is no transformation

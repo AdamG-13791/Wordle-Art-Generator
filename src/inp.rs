@@ -16,12 +16,11 @@ pub fn getargs() -> Result<Args, &'static str> {
     args.option("o", "out", "Output file", "OUT", Occur::Req, None);
     args.option("u", "hint-out", "Optional - Hint output type, a=all hints, f=first hint, r=random hint, default is first", "TYPE", Occur::Optional, Some(String::from("f")));
     args.flag("n", "nope", "Flag - When included then no output will be writen if any rows fail to find a hint");
-    args.flag("h", "help", "Print this help message, only works if first argument");
+    args.flag("h", "help", "Flag - Print this help message");
 
-    // Check first argument for help menu
+    // Check for help argument
     let v: Vec<String> = env::args().collect();
-    if v.len() > 1 {
-        let s = &v[1];
+    for s in v {
         if s.eq("-h") || s.eq("--help") {
             println!("{}", args.full_usage());
         }
